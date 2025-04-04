@@ -42,7 +42,7 @@ mytable = st.SimpleTable(
     ["Z80","128KB","3.5\" floppy","Monitor","MSX-DOS","MSX-BASIC","soundchip","256 colors"],
     header = ["", "ZX-81", "ZX-Spectrum", "MSX2"],
     )
-table.set(columnwidth=14, title="Computers of the past")
+mytable.set(columnwidth=14, title="Computers of the past")
 print(mytable)
 mytable.transpose()
 print(mytable)
