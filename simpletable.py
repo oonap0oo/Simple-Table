@@ -60,7 +60,7 @@
 #       ["Z80","128KB","3.5\" floppy","Monitor","MSX-DOS","MSX-BASIC","soundchip","256 colors"],
 #       header = ["", "ZX-81", "ZX-Spectrum", "MSX2"],
 #       )
-#   table.set(columnwidth=14, title="Computers of the past")
+#   mytable.set(columnwidth=14, title="Computers of the past")
 #   print(mytable)
 #   mytable.transpose()
 #   print(mytable)
@@ -277,6 +277,19 @@ if __name__ == "__main__":
     table_kwargs.set(header = ("kind of arguments","keyword","function"))  
     table_kwargs.set(title = "Arguments of SimpleTable")  
     print(table_kwargs)
+    
+    import simpletable as st
+    mytable = st.SimpleTable( 
+       ["CPU","RAM","Storage","screen","Disk OS","Prog. language","sound","colors"], 
+       ["Z80","1KB","Cassette","TV","","Sinclair basic","B/W"], 
+       ["Z80","48KB","Cassette","TV","","Sinclair basic","beeps","16 colors?"],
+       ["Z80","128KB","3.5\" floppy","Monitor","MSX-DOS","MSX-BASIC","soundchip","256 colors"],
+       header = ["", "ZX-81", "ZX-Spectrum", "MSX2"],
+       )
+    mytable.set(columnwidth=14, title="Computers of the past")
+    print(mytable)
+    mytable.transpose()
+    print(mytable)
     
     
 
